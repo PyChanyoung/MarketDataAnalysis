@@ -1,0 +1,13 @@
+[2023-09-11T02:14:56.759+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_data_pipeline.import_data manual__2023-09-11T02:14:49.493247+00:00 [queued]>
+[2023-09-11T02:14:56.765+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_data_pipeline.import_data manual__2023-09-11T02:14:49.493247+00:00 [queued]>
+[2023-09-11T02:14:56.765+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-11T02:14:56.771+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): import_data> on 2023-09-11 02:14:49.493247+00:00
+[2023-09-11T02:14:56.776+0000] {standard_task_runner.py:57} INFO - Started process 247 to run task
+[2023-09-11T02:14:56.779+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'stock_data_pipeline', 'import_data', 'manual__2023-09-11T02:14:49.493247+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/main_dag.py', '--cfg-path', '/tmp/tmpk5ud_mvd']
+[2023-09-11T02:14:56.781+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask import_data
+[2023-09-11T02:14:56.814+0000] {task_command.py:415} INFO - Running <TaskInstance: stock_data_pipeline.import_data manual__2023-09-11T02:14:49.493247+00:00 [running]> on host 8286c28131ea
+[2023-09-11T02:14:56.989+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='stock_data_pipeline' AIRFLOW_CTX_TASK_ID='import_data' AIRFLOW_CTX_EXECUTION_DATE='2023-09-11T02:14:49.493247+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-11T02:14:49.493247+00:00'
+[2023-09-11T02:15:00.780+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-11T02:15:00.793+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=stock_data_pipeline, task_id=import_data, execution_date=20230911T021449, start_date=20230911T021456, end_date=20230911T021500
+[2023-09-11T02:15:00.840+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-11T02:15:00.861+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
