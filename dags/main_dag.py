@@ -142,7 +142,7 @@ dag = DAG(
     'stock_data_pipeline',
     default_args=default_args,
     description='A DAG to retrieve stock data and store it in a database',
-    schedule_interval=None
+    schedule_interval='@daily'
 )
 
 retrieve_task = PythonOperator(
