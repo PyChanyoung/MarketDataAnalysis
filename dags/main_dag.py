@@ -134,7 +134,7 @@ def import_data(**kwargs):
 default_args = {
     'owner': 'you',
     'depends_on_past': False,
-    'start_date': datetime(2023, 1, 13),
+    'start_date': datetime(2023, 9, 10),
     'retries': 1
 }
 
