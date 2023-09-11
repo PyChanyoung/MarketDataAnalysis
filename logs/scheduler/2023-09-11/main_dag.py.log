@@ -2800,3 +2800,26 @@
 [2023-09-11T05:13:19.709+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:13:19.708+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-11T05:13:19.725+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:13:19.724+0000] {dag.py:3696} INFO - Setting next_dagrun for stock_data_pipeline to 2023-01-13T00:00:00+00:00, run_after=2023-01-14T00:00:00+00:00
 [2023-09-11T05:13:19.742+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main_dag.py took 0.732 seconds
+[2023-09-11T05:13:56.469+0000] {processor.py:157} INFO - Started process (PID=1159) to work on /opt/airflow/dags/main_dag.py
+[2023-09-11T05:13:56.482+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/main_dag.py for tasks to queue
+[2023-09-11T05:13:56.524+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:13:56.514+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/main_dag.py
+[2023-09-11T05:14:20.165+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2023-09-11T05:14:20.271+0000] {processor.py:839} INFO - DAG(s) dict_keys(['stock_data_pipeline']) retrieved from /opt/airflow/dags/main_dag.py
+[2023-09-11T05:14:21.451+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:14:21.439+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-11T05:14:21.710+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main_dag.py took 25.311 seconds
+[2023-09-11T05:15:53.110+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/main_dag.py
+[2023-09-11T05:15:53.117+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/main_dag.py for tasks to queue
+[2023-09-11T05:15:53.128+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:15:53.127+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/main_dag.py
+[2023-09-11T05:15:54.080+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2023-09-11T05:15:54.094+0000] {processor.py:839} INFO - DAG(s) dict_keys(['stock_data_pipeline']) retrieved from /opt/airflow/dags/main_dag.py
+[2023-09-11T05:15:54.243+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:15:54.243+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:stock_data_pipeline' as access control is unset.
+[2023-09-11T05:15:54.245+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:15:54.244+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-11T05:15:54.274+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main_dag.py took 1.196 seconds
+[2023-09-11T05:16:24.338+0000] {processor.py:157} INFO - Started process (PID=47) to work on /opt/airflow/dags/main_dag.py
+[2023-09-11T05:16:24.341+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/main_dag.py for tasks to queue
+[2023-09-11T05:16:24.351+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:16:24.350+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/main_dag.py
+[2023-09-11T05:16:24.876+0000] {logging_mixin.py:151} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2023-09-11T05:16:24.890+0000] {processor.py:839} INFO - DAG(s) dict_keys(['stock_data_pipeline']) retrieved from /opt/airflow/dags/main_dag.py
+[2023-09-11T05:16:24.949+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:16:24.948+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-11T05:16:24.977+0000] {logging_mixin.py:151} INFO - [2023-09-11T05:16:24.977+0000] {dag.py:3696} INFO - Setting next_dagrun for stock_data_pipeline to 2023-02-04T00:00:00+00:00, run_after=2023-02-05T00:00:00+00:00
+[2023-09-11T05:16:24.996+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/main_dag.py took 0.667 seconds
