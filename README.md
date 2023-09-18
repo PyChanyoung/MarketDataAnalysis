@@ -61,6 +61,3 @@ yfinance library: It provides me access to financial data available from Yahoo F
 - I understood the nuances of crafting a real-time data visualization dashboard.
 - I experienced the collaboration of multiple tools like Airflow, PostgreSQL, and Grafana within a cohesive workflow.
 
----
-
-다시한번 확인해 주세요.
