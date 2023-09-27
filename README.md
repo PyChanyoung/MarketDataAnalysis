@@ -60,4 +60,3 @@ yfinance library: It provides me access to financial data available from Yahoo F
 - I gained valuable experience in Docker containerization and orchestration.
 - I understood the nuances of crafting a real-time data visualization dashboard.
 - I experienced the collaboration of multiple tools like Airflow, PostgreSQL, and Grafana within a cohesive workflow.
-
