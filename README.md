@@ -35,9 +35,9 @@ yfinance library: This connects us to the wealth of financial data housed by Yah
 ### 4-1. OLHC (Open, Low, High, Close Prices)
 
 - **Situation**: I wanted to understand the daily fluctuations in stock prices.
-  Task: I aimed to provide an accurate representation of daily stock price movements.
-  Action: I focused on displaying the OLHC data.
-  Result: I was able to gain insights into daily stock price movements.
+  - **Task**: I aimed to provide an accurate representation of daily stock price movements.
+  - **Action**: I focused on displaying the OLHC data.
+  - **Result**: I was able to gain insights into daily stock price movements.
 
 ### 4-2. 5-day Moving Averages for Short-term Trends
 
