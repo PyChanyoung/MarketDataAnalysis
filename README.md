@@ -2,54 +2,70 @@
 
 ## 1. Project Objective
 
-The primary aim of this project is to provide a comprehensive view of key stock indicators for investors. I fetch stock data using the yfinance library, targeting specific stock tickers, and visualize the results in Grafana.
+This project seeks to facilitate data-driven decision-making by providing actionable insights on key stock indicators. Through the yfinance library, we extract data from targeted stock tickers and present this data in a user-friendly format using Grafana, aiding analysts in their assessments.
 
 ## 2. Technical Stack
 
-- **Programming Language**
-  - Python: I use it for data collection, processing, and analysis.
-- **Data Integration & Processing**
-  - Airflow: Orchestrates my data pipeline.
-  - yfinance: Helps me gather stock data.
-  - PostgreSQL: My choice for data warehousing.
-  - Grafana: I use it to visualize the stock indicators.
-- **Containerization & Orchestration**
-  - Docker: Houses the images for Airflow, PostgreSQL, Grafana, Redis, and Flower.
-- **Cache & Monitoring**
-  - Redis: Assists in task caching.
-  - Flower: For monitoring tasks.
+- **Data Collection & Analysis**
+  - Python: The backbone of our data analysis, making sense of raw stock data.
+  - yfinance: A reliable source for fetching our financial data.
+  - Airflow: Ensures a timely and consistent data collection process.
+  - PostgreSQL: Provides a robust database for storing and querying the financial data.
+- **Data Visualization & Reporting**
+  - Grafana: Enables interactive and easily digestible visuals on stock performance indicators.
+- **Infrastructure & Monitoring**
+  - Docker: Streamlines the deployment of our entire data infrastructure.
+  - Redis & Flower: Together, they ensure smooth operation by caching tasks and monitoring their execution, respectively.
 
 ### 2.1 Data Sources
 
-yfinance library: It provides me access to financial data available from Yahoo Finance.
+yfinance library: This connects us to the wealth of financial data housed by Yahoo Finance.
 
-## 3. Key Features
+## 3. Analytical Features
 
-- **View Stock Indicators**:
-  - I can monitor open, low, high, and close prices (OLHC).
-  - Analyze 5-day moving averages.
-  - Dive into volume analysis for tickers.
-  - Understand daily price volatility.
-  - Delve deep into quarterly daily returns.
+- **Stock Performance Overview**:
+  - Track the OLHC (Open, Low, High, Close) prices to gauge stock momentum.
+  - Study the 5-day moving averages for trend analysis.
+  - Scrutinize volume metrics to infer investor interest in specific tickers.
+  - Evaluate daily price volatility to inform risk assessments.
+  - Compare quarterly daily returns for mid-term performance.
 
-## 4. Project Challenges & Solutions
+## 4. Analytical Challenges & Solutions
 
-- **Situation**: I needed consistent and streamlined data fetching to ensure I had the most up-to-date stock information.
+### 4-1. OLHC (Open, Low, High, Close Prices)
 
-  - **Task**: I aimed to establish an efficient data retrieval mechanism without redundancies using Airflow and yfinance.
-  - **Action**: I implemented Airflow's DAG capabilities to orchestrate a seamless and consistent data retrieval process from yfinance.
-  - **Result**: I achieved a reliable and efficient data pipeline, ensuring up-to-date stock indicators without redundancies.
+- **Situation**: I wanted to understand the daily fluctuations in stock prices.
+  Task: I aimed to provide an accurate representation of daily stock price movements.
+  Action: I focused on displaying the OLHC data.
+  Result: I was able to gain insights into daily stock price movements.
 
-- **Situation**: I wanted an effective visualization without the need for extensive data preprocessing.
+### 4-2. 5-day Moving Averages for Short-term Trends
 
-  - **Task**: My goal was to directly use the fetched data for visualization.
-  - **Action**: Recognizing that specific columns from yfinance data were straightforward, I used them directly in Grafana without additional processing.
-  - **Result**: I was able to offer direct and meaningful visualizations without the need for time-consuming preprocessing.
+- **Situation**: I found it difficult to understand.
+  - **Task**: I decided to use the 5-day moving average to capture short-term stock trends.
+  - **Action**: I integrated the 5-day moving average into the analysis.
+  - **Result**: I was able to identify and understand short-term stock price trends.
 
-- **Situation**: I faced the challenge of housing multiple tools within a single Docker container.
-  - **Task**: My task was to consolidate multiple tools into a single environment for ease of deployment.
-  - **Action**: I integrated tools like Airflow, PostgreSQL, Grafana, Redis, and Flower into one unified Docker container using docker-compose.
-  - **Result**: The project's setup and deployment became more straightforward, with all tools cohesively working in one environment.
+### 4-3. Volume Analysis for Market Interest and Liquidity
+
+- **Situation**: I believed that volume is an essential indicator.
+  - **Task**: I wanted to relate market interest with volume.
+  - **Action**: Thinking that market interest might be related to volume, I attempted to analyze the trading volume.
+  - **Result**: I gained a better understanding of market interest and liquidity.
+
+### 4-4. Daily Price Volatility for Risk Assessment
+
+- **Situation**: I wondered if there might be some inherent risks.
+  - **Task**: I aimed to evaluate risks based on daily price volatility.
+  - **Action**: I delved deep into analyzing daily price fluctuations.
+  - **Result**: I was able to assess potential risks in stock investments.
+
+### 4-5. Quarterly Daily Returns for Long-term Performance
+
+- **Situation**: I believed that while short-term insights are essential, it's important to understand the mid-to-long-term trajectory by quarter.
+  - **Task**: I aimed to analyze daily returns on a quarterly basis to gain long-term insights.
+  - **Action**: I incorporated quarterly daily returns into the analysis.
+  - **Result**: I obtained a clearer picture of the stock's long-term performance.
 
 ## 5. Screenshots & Demo Video
 
