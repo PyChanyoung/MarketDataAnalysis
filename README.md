@@ -73,6 +73,8 @@ yfinance library: This connects us to the wealth of financial data housed by Yah
 
 ## 6. Learning Points from the Project
 
-- I gained valuable experience in Docker containerization and orchestration.
-- I understood the nuances of crafting a real-time data visualization dashboard.
-- I experienced the collaboration of multiple tools like Airflow, PostgreSQL, and Grafana within a cohesive workflow.
+- **Data Engineering and Orchestration**: I gained hands-on experience in crafting and orchestrating data pipelines using tools like Airflow and Docker, ensuring seamless data flow for analysis.
+
+- **Analytical Tools and Visualization**: I delved deep into understanding the capabilities of PostgreSQL for data storage and manipulation. Moreover, I refined my skills in crafting insightful dashboards using Grafana, enabling more informed decision-making based on the analyzed data.
+
+- **Interplay of Tools in Analysis**: I realized the importance of integrating various tools and platforms. The synergy between Airflow, PostgreSQL, and Grafana allowed me to create a cohesive workflow that enhanced the accuracy and efficiency of my analysis.
